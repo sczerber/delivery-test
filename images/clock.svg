@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="87" viewBox="0 0 86 87">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 100px;
+        fill: #ee1c25;
+        text-anchor: middle;
+        font-family: FontAwesome;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text id="clock.svg" class="cls-1" x="43" y="78.999"><tspan x="43"></tspan></text>
+</svg>

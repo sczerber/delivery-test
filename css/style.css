@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+
+*,
+*:hover,
+*:active {
+    font-family: Lato, sans-serif;
+    box-sizing: border-box;
+}
+a {
+    display: inline-flex;
+    text-decoration: none;
+}
+.page-wrapper{
+    max-width: 100%;
+}
+body{
+    max-width: 1920px;
+}
+.clear {
+    clear: both;
+}
+img {
+    max-width: 100%;
+}
+.jd-container {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    width: 60.9%;
+    flex-wrap: wrap;
+}
+
+/* ----- HEADER BEGIN ----*/
+.jd-header {
+    max-height: 70px;
+    width: 100%;
+    background-color: #ededed;
+    padding-top: 14px;
+    padding-right: 1.5652%;
+    padding-left: 1.5652%;
+    padding-bottom: 14px;
+}
+.jd-button-header__login {             /* -- задаём размеры кнопка в верхней секции и выравниваем их по правому краю --- начало */
+    float: right;
+    display: block;
+    width: 74px;
+    height: 41px;
+    background-color: #dadada;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #333333;
+}
+.jd-button-header__login:hover{               /* эффекты при наведении и нажатии на кнопки -- начало */
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+}
+.jd-button-header__login:active {
+    -webkit-box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+}
+.jd-button-header__registration:hover {
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+}
+.jd-button-header__registration:active {
+    -webkit-box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);                 /* эффекты при наведении и нажатии на кнопки -- конец */
+}
+.jd-button-header__registration {
+    float: right;
+    display: block;
+    width: 118px;
+    height: 41px;
+    background-color: #ee1c25;
+    border: none;
+    border-radius: 5px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ffffff;       /* -- задаём размеры кнопка в верхней секции и выравниваем их по правому краю --- конец */
+}
+/* ----- HEADER END ----*/
+/* -----SECTION COMPANY - BEGIN -----*/
+.jd-company {                /* задаём размеры второй секции и стили*/
+    padding-right: 1.5625%;
+    height: 126px;
+    width: 100%;
+    background-color: #ffffff;
+
+}
+.jd-company__logo{
+    margin-left: 1.5652%;
+    margin-top: 30px;
+
+}
+.jd-company__navigate {             /* позиционирование и стилизирование менюшки навигации -- начало */
+    float: right;
+}
+.jd-company__list {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.jd-company__navigate .menu-item {
+    padding-right: 5px;
+    display: inline-flex;
+
+}
+.jd-company__navigate li .menu-list {
+    padding: 0 5px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    height: 126px;
+    line-height: 126px;
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+}
+.jd-company__navigate li .menu-list:hover {
+    color: white;
+    background-color: black;
+    border-bottom: 5px solid red;
+}
+.jd-company__drop-list {
+    position: absolute;
+    transform: translateY(126px);
+    list-style: none;
+    background-color: black;
+    display: none;
+    z-index: 10;
+}
+.jd-company__drop-list a {
+    display: flex;
+    color: white;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    margin-left: -25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+hr {
+    margin-left: -25px;
+    margin-right: 25px;
+}
+.hover-list:hover > .jd-company__drop-list {
+    display: block;
+}
+.jd-company__drop-list a:hover {
+    color: red;
+}        /* позиционирование и стилизирование менюшки навигации -- конец */
+
+
+/* -----SECTION COMPANY - END -----*/
+/* ------- SECTION SLIDER BEGIN -----*/
+.slide {             /* -- параметры секции со слайдером, ширина, высота*/
+    position: relative;
+    max-width: 100%;
+    max-height: 903px;
+}
+.slide__slider {    /*размеры самого слайдера*/
+    display: block;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+.slide__content {      /* размеры и расположения блоков на слайдере*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+}
+.slide__content--delivery {      /* стилизация блоков на слайдере -- начало*/
+    background: rgba(238, 49, 57, 0.9);
+    flex-basis: 25%;
+    padding-left: 10px;
+
+}
+.slide__content--terms {
+    background: rgba(221, 221, 221, 0.1);
+    flex-basis: 25%;
+    padding-left: 10px;
+}
+.slide__content--nearest {
+    background: rgba(238, 49, 57, 0.9);
+    flex-basis: 25%;
+    padding-left: 10px;
+}
+.slide__content--calling {
+    background: rgba(44, 36, 27, 0.8);
+    flex-basis: 25%;
+    padding-left: 10px;
+}
+.content-text {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: white;
+    line-height: 1.6em;
+    margin-top: -15px;
+    max-font-size: 15px;
+}
+.calculator {
+    float: left;
+    margin-right: 45px;
+}
+.content-underheader {
+    margin-top: -25px;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    max-font-size: 35px;
+    color: white;
+}
+.content-header {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    max-font-size: 35px;
+    color: white;
+}
+.content-text-black {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: black;
+    line-height: 1.6em;
+    margin-top: -15px;
+    max-font-size: 15px;
+}
+.content-underheader-black {
+    margin-top: -25px;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    max-font-size: 30px;
+    color: black;
+}
+.content-header-black {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    max-font-size: 35px;
+    color: black;
+}                        /* стилизация блоков на слайдере -- конец*/
+
+/* ------- SECTION SLIDER END -----*/
+/* ------- DELIVERY SERVICES -- BEGIN -----*/
+.services {        /* размеры следующей секции*/
+    width: 100%;
+    height: 637px;
+}
+.services__head {       /*размеры и стилизация первого эллемента секции (заголовка)*/
+    height: 34%;
+    flex-basis: 100%;
+    padding-top: 70px;
+    font-family: Lato, sans-serif;
+    color: #333333;
+}
+.services__content {     /* размеры второго и третьего эллементов секции*/
+    height: 33%;
+    flex-basis: 50%;
+    padding-bottom: 20px;
+}
+.services__head--head {      /*стиль заголовка*/
+    margin: auto 0;
+    font-weight: 700;
+}
+.services__head--underhead {  /*стиль подзаголовка*/
+    margin: auto 0;
+    font-weight: 200;
+}
+.services__content--image-background {     /* задний фон иконок в секции*/
+    background: #242424;
+    height: 100%;
+    width: 21.6%;
+    float: left;
+    text-align: center;
+    padding-top: 18%;
+    margin-right: 10px;
+}
+.services__content--image-background-red {
+    background: #ee1c25;
+    height: 100%;
+    width: 21.6%;
+    float: left;
+    text-align: center;
+    padding-top: 18%;
+    margin-right: 10px;
+}
+.services__content--head {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ee1c25;
+    text-transform: uppercase;
+}
+.services__content--text {
+    font-size: 15px;
+    font-weight: 300;
+    color: #b5b5b5;
+    line-height: 1.5em;
+}
+
+/* ------- SDELIVERY SERVICES -- END -----*/
+/* ------- CUSTOMER SERVICES -- BEGIN -----*/
+.customer-services {   /*размеры и фоновое изображение секции с коробкой*/
+    width: 100%;
+    height: 475px;
+    background-image: url("../images/boxbg.jpg");
+    background-size: 100% 100%;
+}
+.customer-services__content {
+    font-family: Lato, sans-serif;
+    text-align: right;
+}
+.customer-services__head {      /*заголовок секции с коробкой*/
+    margin-top: 100px;
+    margin-bottom: 0;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.customer-services__underheader {     /*подзаголовок секции с коробкой*/
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.customer-services__text {    /*текст секции с коробкой*/
+    font-size: 15px;
+    font-weight: 300;
+    color: #878787;
+    margin-bottom: 30px;
+}
+.button-read-more {      /*стиль кнопки READ MORE*/
+    width: 176px;
+    height: 60px;
+    background-color: #ee1c25;
+    border: none;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+}
+.button-read-more:hover {
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+}
+.button-read-more:active {
+    -webkit-box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+}
+/* ------- CUSTOMER SERVICES -- END -----*/
+/* ------ ABOUT -- BEGIN ------*/
+.about {     /*позиционирование, размеры и стилизация секторов в секции ABOUT -- начало */
+    width: 100%;
+    height: 645px;
+}
+.about__content {
+    flex-basis: 50%;
+}
+.about__content-first {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+.about__content-second {
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.about__content-third {
+    text-transform: uppercase;
+    font-weight: 700;
+    max-font-size: 25px;
+    color: #ee1c25;
+    line-height: 1.2em;
+}
+.about__content-fourth {
+    font-size: 15px;
+    font-weight: 300;
+    color: #878787;
+    margin-bottom: 30px;
+}
+.about__content-three {
+    text-transform: uppercase;
+    font-weight: 700;
+    max-font-size: 20px;
+    color: #ee1c25;
+    line-height: 1.2em;
+    margin-top: 30px;
+}        /*позиционирование, размеры и стилизация секторов в секции ABOUT -- конец */
+.about__content-three:hover {
+    color: #333333;
+}
+.underline__about {    /*линия между строками*/
+    transform: translateX(20px);
+}
+.about__number {   /*цифры во втором секторе данной секции*/
+    font-weight: 700;
+    font-size: 40px;
+    color: #d0cfcf;
+}
+.about__number:hover {
+    color: #ee1c25;
+}
+/* ------ ABOUT -- END ------*/
+/* ---- PREFOOTER -- BEGIN --- */
+.prefooter {
+    width: 100%;
+    height: 452px;
+    background: #262626;
+}
+.prefooter__first {     /*позиционирование первых трёх блоков предпоследней секции*/
+    flex-basis: 16.7%;
+}
+.prefooter__last {
+    flex-basis: 49.9%;  /*позиционирование четвёртого блока, самого большого*/
+}
+.prefooter__head {      /*стили заголовков маленьки секторов*/
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    max-font-size: 20px;
+    line-height: 2.55em;
+    margin-bottom: 0;
+    margin-top: 85px;
+    color: white;
+}
+.prefooter__text {     /*стили текста маленьких секторов*/
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    max-font-size: 15px;
+    line-height: 2em;
+    margin: 0;
+    color: #7b7b7b;
+}
+.prefooter__content--right {   /*выравнивание текста по правому краю в самом большом блоке*/
+    text-align: right;
+}
+.right-head {      /*заголовок большого блока*/
+    font-size: 59px;
+    max-font-size: 89px;
+    font-weight: 700;
+    line-height: 0.5em;
+    color: #ee1c25;
+    margin: 85px 0 0 0;
+}
+.right-text {        /*текст большого блока*/
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    max-font-size: 15px;
+    line-height: 2em;
+    margin: 0;
+    color: #7b7b7b;
+    margin-top: 10px;
+}
+.right-head:first-letter {      /*первая буква заголовка белая*/
+    color: white;
+}
+
+
+/* ---- PREFOOTER -- END --- */
+/* ---- FOOTER -- BEGIN --- */
+.privacy {
+    width: 100%;   /*размер футера*/
+    height: 58px;
+    background: #222222;
+}
+.privacy__year {      /*стиль текста футера*/
+    font-family: Lato, sans-serif;
+    font-weight: 200;
+    max-font-size: 15px;
+    color: white;
+    margin: auto 0;
+}
+
+
+
+/* ---- FOOTER -- END --- */

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="72" viewBox="0 0 71 72">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 90px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: FontAwesome;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text id="strelka.svg" class="cls-1" x="35" y="65"><tspan x="35"></tspan></text>
+</svg>
